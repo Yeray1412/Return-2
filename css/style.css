@@ -1,0 +1,74 @@
+:root {
+    --purple:#6070FF;
+    --light-purple:#EBEBFF;
+    --white: #ffffff;
+
+    --main-font: 'Poppins', sans-serif
+}
+
+
+/* global */
+
+.navbar {
+    background-color: white !important;
+    font-family: var(--main-font);
+}
+
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: #6070FF;
+    font-size: 18px;
+}
+
+.navbar ul {
+    font-size: 15px;
+}
+
+/* Headr */
+
+header {
+    height: calc(100vh - 54.5px);
+    font-family: var(--main-font);
+    background-image: url(../Imgs2/Header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #091E42;
+    max-width: 400px;
+}
+
+header p:first-of-type {
+    color: #344563;
+    font-size: 20px;
+    max-width: 933px;
+}
+
+header .connect p {
+    color: #7F8CFF;
+    font-size: 16px;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    padding: 0px 5px;
+}
+
