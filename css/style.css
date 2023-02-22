@@ -25,6 +25,7 @@
 .navbar-brand:hover {
     color: #6070FF;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .navbar ul {
@@ -32,6 +33,10 @@
 }
 
 /* Headr */
+
+body {
+    background-color: #E5E5E5;
+}
 
 header {
     height: calc(100vh - 54.5px);
@@ -42,6 +47,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border-radius: 0 0 0 100px;
 }
 
 header div h2 {
@@ -70,5 +77,128 @@ header ul {
 
 header ul li {
     padding: 0px 5px;
+}
+
+header ul li:first-of-type {
+    padding: 0 10px 0 0;
+}
+
+/* Portfolio */
+
+.portfolioSec {
+    background-color: #E5E5E5;
+    padding: 142px 0;
+}
+
+.portfolioSec .card {
+    padding: 24px;
+    border: 1px solid #DFE1E6;
+    border-radius: 24px;  
+    margin-bottom: 88px;
+}
+
+.portfolioSec .card:nth-of-type(1) .lang {
+    width: 200px;
+}
+
+.portfolioSec .card:nth-of-type(2) .row {
+    display: flex;
+}
+
+.portfolioSec .card:nth-of-type(2) .row .speImg {
+    order: 2;
+}
+
+.portfolioSec .card:nth-of-type(4) .row {
+    display: flex;
+}
+
+.portfolioSec .card:nth-of-type(4) .row .speImg {
+    order: 2;
+}
+
+.portfolioSec .card:last-of-type {
+    margin-bottom: 0px;
+}
+
+.portfolioSec .card .textBox {
+    padding: 24px;
+}
+
+.portfolioSec .card .textBox h2 {
+    color: #091E42;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.portfolioSec .card .textBox .job ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.portfolioSec .card .lang {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.portfolioSec .card .lang li {
+    background: #EBEBFF;
+    border-radius: 8px;
+    color: var(--purple);
+    padding: 5px 7px;
+}
+
+.portfolioSec .card button {
+    color: #396DF2;
+    padding: 8px;
+    border: 1px solid #7F8CFF;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+
+
+@media (max-width:776px) {
+    header {
+        background-image: url(../Imgs2/header-shapes\ mobile.png);
+        border-radius: 0 0 0 50px;
+    }
+
+    header h2 {
+        font-size: 40px;
+    }
+
+    header p:first-of-type {
+        font-size: 16px;
+    }
+
+    header ul li {
+        padding: 0 10px ;
+    } 
+
+    header ul li:first-of-type {
+        padding: 0 10px 0 0;
+    }
+
+    .portfolioSec .card:nth-of-type(2) .row {
+        display: block;
+    }
+
+    .portfolioSec .card:nth-of-type(4) .row {
+        display: block;
+    }
+}
+
+
+@media (max-width:996px) {
+
+}
+
+@media (min-width:1200px) {
+    
 }
 
