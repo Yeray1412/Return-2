@@ -6,6 +6,23 @@
     --main-font: 'Poppins', sans-serif
 }
 
+button:not(.navbar-toggler):hover {
+    background-color: var(--purple) !important;
+    color: var(--white) !important;
+}
+
+button:not(.navbar-toggler):active {
+    background-color: #2230D2 !important;
+    color: var(--white) !important;
+}
+
+html,body{overflow-x: hidden;}
+
+.stopScroll {
+    height: 100vh !important;
+    overflow: hidden;
+}
+
 
 /* global */
 
@@ -218,6 +235,7 @@ header ul li:first-of-type {
     border-bottom: 1px solid #DFE1E6;
     position: relative;
     margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
 }
 
 .aboutUs .head {
@@ -225,6 +243,7 @@ header ul li:first-of-type {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    width: calc(100% - 10px);
 }
 
 .aboutUs .head p {
@@ -246,6 +265,10 @@ header ul li:first-of-type {
 .aboutUs .dropList ul li svg {
     width: fit-content;
     margin-bottom: 8px;
+}
+
+.arrow {
+    transition: 0.1s;
 }
 
 /* contactUs */
@@ -322,6 +345,39 @@ form button {
 }
 
 
+.popUp {
+    height: 100vh;
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 100;
+    background-color: #6070FF;
+    width: 100vw;
+    padding: 28px;
+    transition: 0.3s ease-in-out;
+    mix-blend-mode: multiply;
+}
+
+.popUp .xHead {
+    width: 100%;
+    display:flex ;
+    justify-content: flex-end;
+    height: 40px;
+}
+
+.popUp ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    color: var(--white);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.popUp ul li {
+    padding: 5px 0;
+}
+
 @media (max-width:776px) {
     header {
         background-image: url(../Imgs2/header-shapes\ mobile.png);
@@ -369,6 +425,10 @@ form button {
     
     form textarea {
         width: 90%;
+    }
+
+    .portfolioSec .card .textBox {
+        padding: 24px 0;
     }
 }
 
