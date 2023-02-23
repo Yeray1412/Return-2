@@ -160,6 +160,166 @@ header ul li:first-of-type {
     background-color: var(--white);
 }
 
+.aboutUs {
+    background-color: white;
+    padding: 142px 0;
+    font-family: var(--main-font);
+    min-height: 100vh;
+    border-radius: 0 100px 0 0;
+}
+
+
+.aboutUs div h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #091E42;
+    max-width: 400px;
+}
+
+.aboutUs p:first-of-type {
+    color: #344563;
+    font-size: 16px;
+    max-width: 933px;
+}
+
+.aboutUs .connect p {
+    color: #7F8CFF;
+    font-size: 16px;
+}
+
+.aboutUs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutUs ul li {
+    padding: 0px 5px;
+
+}
+
+.aboutUs ul li:first-of-type {
+    padding: 0 10px 0 0;
+}
+
+.aboutUs button {
+    color: #396DF2;
+    padding: 8px;
+    border: 1px solid #7F8CFF;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.aboutUs .dropList .langDrop,
+.aboutUs .dropList .skillDrop,
+.aboutUs .dropList .framDrop {
+    height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #DFE1E6;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.aboutUs .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.aboutUs .head p {
+    margin: 0;
+}
+
+.aboutUs .dropList ul li {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F9;
+    width: 110px;
+    height: 100px;
+    padding: 16px 12px;
+    margin-right: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.aboutUs .dropList ul li svg {
+    width: fit-content;
+    margin-bottom: 8px;
+}
+
+/* contactUs */
+
+.contactUs {
+    padding: 142px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+    background-image: url(../Imgs2/contact\ form\ background\ shapes@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100px 0 0 0;
+    position: relative;
+    height: calc(100vh + 100px);
+}
+
+.contactUs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+    background-color: white;
+}
+
+.contactUs .text p {
+    max-width: 570px;
+    font-size: 20px;
+}
+
+.contactUs .text h2 {
+    font-size: 40px;
+}
+
+.contactUs .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 430px;
+}
+
+form input {
+    width: 450px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border:  none;
+}
+
+form textarea {
+    width: 450px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+form button {
+    color: #396DF2;
+    padding: 8px;
+    border: 1px solid #7F8CFF;
+    border-radius: 8px;
+    background-color: var(--white);
+}
 
 
 @media (max-width:776px) {
@@ -169,7 +329,7 @@ header ul li:first-of-type {
     }
 
     header h2 {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
     header p:first-of-type {
@@ -190,6 +350,25 @@ header ul li:first-of-type {
 
     .portfolioSec .card:nth-of-type(4) .row {
         display: block;
+    }
+
+    .aboutUs {
+        padding:  114px 0;
+        border-radius: 0 50px 0 0;
+    }
+
+    .contactUs {
+        background-image: url(../Imgs2/contact\ form\ shapes-mobile@2x.png);
+        border-radius: 50px 0 0 0;
+    } 
+
+    form input {
+        width: 90%;
+    }
+
+    
+    form textarea {
+        width: 90%;
     }
 }
 
